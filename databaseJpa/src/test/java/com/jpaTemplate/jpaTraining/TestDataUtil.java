@@ -26,26 +26,26 @@ public class TestDataUtil {
     public static Author createTestAuthorC() {
         return Author.builder()
                 .id(3L)
-                .name("Anitta Dick")
+                .name("Mc Luvin")
                 .age(23)
                 .build();
     }
 
     public static Book createTestBookA(final Author author) {
         return Book.builder()
-                .isbn("123abc").title("Ass Cake: The Ultimate Recipe").author(author)
+                .isbn("123abc").title("Book 1").author(author)
                 .build();
     }
 
     public static Book createTestBookB(final Author author) {
         return Book.builder()
-                .isbn("213abc").title("Milking Titties For Dummies").author(author)
+                .isbn("213abc").title("Book 2").author(author)
                 .build();
     }
 
     public static Book createTestBookC(final Author author) {
         return Book.builder()
-                .isbn("321abc").title("Revenge of the Juicy Bundas").author(author)
+                .isbn("321abc").title("Book 3").author(author)
                 .build();
     }
 }

@@ -63,7 +63,7 @@ public class BookRepositoryIntegrationTest {
         Book bookA = TestDataUtil.createTestBookA(author1);
         underTest.save(bookA);
 
-        bookA.setTitle("If You Don't Hawk Tuah, I Don't Want To Talk To Ya: Volume 1");
+        bookA.setTitle("Volume 1");
         underTest.save(bookA);
 
         Optional<Book> result = underTest.findById(bookA.getIsbn());
